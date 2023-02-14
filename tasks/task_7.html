@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body bgcolor="#E3E4E4">
+  
+<p id="month"></p>
+<p id="day"></p>
+  <script>
+
+  document.getElementById("month").innerHTML =
+  Math.floor(Math.random() *  12);
+  document.getElementById("day").innerHTML = 
+  Math.floor(Math.random(0) * 6);
+  let all = +document.getElementById("month").innerHTML  +  +document.getElementById("day").innerHTML
+  
+  document.write(`
+  Місяць - ${document.getElementById("month").innerHTML}
+  День - ${document.getElementById("day").innerHTML}
+  Загальна сума = ${all}
+  `)
+  </script>
+  
+</body>
+</html>  

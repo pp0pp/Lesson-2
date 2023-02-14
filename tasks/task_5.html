@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body bgcolor="#E3E4E4">
+  <script>
+
+  let sec = parseInt(prompt('Введіть кількість сек', ''))
+  let min = sec / 60
+  let hour = min / 60
+
+  let daySec = 86400
+  let daySecLeft = 86400 - sec
+  let dayMin = 1140
+  let dayMinLeft = 1440 - min
+  let dayHour = 60
+  let dayHourLeft = 24 - hour
+  
+document.write
+  (`<div>
+    Пройшло від початку доби
+    <div>
+     ${sec} - секунд пройшло від початку доби, 
+     <div>
+      ${min.toFixed(2)} - хвилин пройшло від початку доби
+        <div>
+         ${hour.toFixed(2)} - годин пройшло від початку доби, 
+          <div>
+           Залишилось до кінця доби
+            <div>
+             ${daySecLeft} - секунд залишилось до кінця доби
+              <div>
+               ${dayMinLeft.toFixed(2)} - хвилин залишилось до кінця доби, 
+                 <div> 
+                  ${dayHourLeft.toFixed(2)} - годин залишилось до кінця доби
+                  
+</div>`)
+</script>
+   
+</body>
+</html>  

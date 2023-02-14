@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script bgcolor="#E3E4E4">
+  let price = parseFloat(prompt('Введіть ціну товару', ''))
+  let amount = parseInt(prompt('Введіть кількість товару', ''))
+  
+  let fullPrice = amount * price
+  let tax = fullPrice * 0.05
+  let fullPriceWithoutTax = fullPrice - tax
+  
+  document.write
+  (`<div>
+    загальна ціна - ${fullPrice.toFixed(2)}
+    <div>
+    загальна ціна без ПДВ(5%) - ${fullPriceWithoutTax.toFixed(2)}
+    </div>
+    `)
+ 
+</script>
+   
+</body>
+</html>  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body bgcolor="#E3E4E4">
+
+<script>
+  
+let product1 = parseInt(prompt('Введіть кількість товару 1', ''))
+  let price1 = parseFloat(prompt('Введіть ціну товару 1', ''))
+let product2 = parseInt(prompt('Введіть кількість товару 2', ''))
+  let price2 = parseFloat(prompt('Введіть ціну товару 2', ''))
+let product3 = parseInt(prompt('Введіть кількість товару 3', ''))
+  let price3 = parseFloat(prompt('Введіть ціну товару 3', ''))
+
+  let product1Price = product1 * price1
+  let product2Price = product2 * price2
+  let product3Price = product3 * price3
+  
+  let fullPrice = product1Price + product2Price + product3Price
+
+
+  document.write(`
+  <table border="1px">
+    <tr>
+       <th>Кількість товару №1 (штук)</th>
+        <td>${product1}</td>
+    </tr>
+
+    <tr>
+     <th>Ціна товару №1 (за штуку)</th>
+      <td>${price1}</td>
+    <tr>
+    
+    <tr>
+      <th> Кількість товару №2 (штук)</th>
+       <td>${product2}</td>
+    </tr>
+
+    <tr>
+      <th>Ціна товару №2 (за штуку)</th>
+      <td>${price2}</td>
+   </tr>
+    
+   <tr>
+    <th>Кількість товару №3 (штук)</th>
+    <td>${product3}</td>
+  </tr>
+
+  <tr>
+    <th>Ціна товару №3 (за штуку)</th>
+    <td>${price3}</td>
+  </tr>
+  <tr>
+    <th>Загальна ціна товару</th>
+    <td>${fullPrice}</td>
+  </tr>
+  `)
+ </script>
+   
+</body>
+</html>  
