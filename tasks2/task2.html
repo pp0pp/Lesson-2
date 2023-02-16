@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//З клавіатури вводиться ціна товару і кількість грошей. 
+
+
+    // 1. Вводимо  дані
+    const priceProduct = parseFloat(prompt('Введіть ціну товару', '0'))
+    const money = parseFloat(prompt('Введіть кількість грошей', '0'))
+    const priceLottery = 4
+
+    // 2.  результат
+    if (priceProduct > money)
+      document.write('Відмовляємо у покупці')
+    else if (money - priceProduct >=priceLottery)
+      document.write(`Покупка здійснена та пропонуємо купити лотерею за 4 грн.`)
+    else 
+      document.write(`Покупка здійснена`)
+  
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). 
+
+let categoty = prompt('введіть категорію водія A, B або C').toUpperCase()
+
+const motocycle = `A`
+const car = `B`
+const truck = `C`
+
+if (categoty == motocycle)
+document.write (`мотоцикл`)
+
+else if (categoty == car)
+document.write (`легковий авто`)
+
+else if (categoty == truck)
+document.write(`вантажний автомобіль`)
+else 
+document.write(`введіть категорію A, B, C`)
+
+</script>
+</body>
+</html>
